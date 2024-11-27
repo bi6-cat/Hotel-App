@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "hotel-app": {
+    "hotel-app-ang": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/hotel-app",
+            "outputPath": "dist/hotel-app-ang",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "hotel-app:build:production"
+              "buildTarget": "hotel-app-ang:build:production"
             },
             "development": {
-              "buildTarget": "hotel-app:build:development"
+              "buildTarget": "hotel-app-ang:build:development"
             }
           },
           "defaultConfiguration": "development"
