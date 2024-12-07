@@ -5,6 +5,7 @@ import { BookingListComponent } from './booking/booking-list.component';
 import { RoleListComponent } from './role/role-list.component';
 import { RoomListComponent } from './room/room-list.component';
 import { ServiceListComponent } from './service/service-list.component';
+import { HotelServiceListComponent } from './hotel-service/hotel-service-list.component';
 
 const routes: Routes = [
   {
@@ -14,6 +15,10 @@ const routes: Routes = [
   {
     path: 'role',
     component: RoleListComponent,
+  },
+  {
+    path: 'hotel-services',
+    component: HotelServiceListComponent,
   },
   {
     path: 'room',
@@ -27,7 +32,7 @@ const routes: Routes = [
     path: '**',
     redirectTo: '',
     pathMatch: 'full',
-  }
+  },
 ];
 
 @NgModule({
